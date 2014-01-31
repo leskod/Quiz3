@@ -76,15 +76,16 @@ int main(int argc, const char * argv[])
 //        }
         
         for (NSString *theFruit in fruitSweetness) {
-            NSString *theSweetness = fruitSweetness[theFruit];
+            //NSString *theSweetness = fruitSweetness[theFruit];
         
-        if([fruitSweetness[theSweetness] integerValue] < 4){
-            NSLog(@"Not Sweet");
-        }else if ([fruitSweetness[theSweetness] integerValue] > 7){
-            NSLog(@"Sweet");
-        } else {
-            NSLog(@"Somewhat sweet");
-        }
+            NSLog(@"15. fruit %@", theFruit);
+            if([fruitSweetness[theFruit] integerValue] < 4){
+                NSLog(@"Not Sweet");
+            }else if ([fruitSweetness[theFruit] integerValue] > 7){
+                NSLog(@"Sweet");
+            } else {
+                NSLog(@"Somewhat sweet");
+            }
         }
         
         // 16
